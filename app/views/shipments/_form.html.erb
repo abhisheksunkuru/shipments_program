@@ -1,0 +1,10 @@
+<%= form_for [current_customer,@shipment] do |f|%>
+  <%=f.label :source %>
+  <%=f.text_field :source%>
+  <%=f.label :target %>
+  <%=f.text_field :target%>
+  <%=f.label :item%>
+  <%=f.text_field :item%>
+  <%=f.hidden_field :status,value: "pending"%>
+  <%=f.submit %>
+<%end%>  

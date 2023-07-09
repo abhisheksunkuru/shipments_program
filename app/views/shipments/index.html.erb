@@ -1,0 +1,8 @@
+<h1>Shipments</h1>
+<%@shipments.each do |shipment|%>
+  <div><span>source:</span><%=shipment.source%></div>
+  <div><span>Destination:</span><%=shipment.target%></div>
+  <div><span>Item:</span><%=shipment.item%></div>
+<%end%>
+<br/>
+<%= link_to "create shipment", new_customer_shipment_path %>
